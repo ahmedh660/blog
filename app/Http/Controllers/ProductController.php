@@ -58,7 +58,7 @@ class ProductController extends Controller
             'product_id' => $product->id,
             'quantity' => $validated['quantity'],
             'image' => $image,
-            'user_id' => auth()->id(),
+            //'user_id' => auth()->id(),
         ]);
         return redirect('/sales')->with('success','product added successfully');
     }
